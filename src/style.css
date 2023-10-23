@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  color: #4285f4;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+
+@media (min-width: 280px) and (max-width: 600px) {
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .form-container{
+    margin-left:0px;
+    border-left-width: 12px;
+  }
+  .question-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1600px) {
+  .form-container {
+    max-width: 500px;
+    margin-right: 16px;
+  }
+  .summary-container {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

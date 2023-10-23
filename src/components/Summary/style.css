@@ -1,0 +1,33 @@
+/* Summary.css */
+.summary-container {
+  flex: 1;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 100%; /* Limit the width to 100% of the parent container */
+  overflow-wrap: break-word; /* Wrap long words to the next line */
+}
+
+.summary-container h2 {
+  color: #093171; /* Blue heading color */
+  margin-bottom: 15px;
+}
+
+/* Summary List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  background-color: #f7f9fc; /* Light blue background color for summary */
+  padding: 16px;
+  border-radius: 4px;
+}
+
+ul li strong {
+  color: #497dd1; /* Blue color for question labels in summary */
+  font-weight: 600;
+  margin-right: 5px;
+}
