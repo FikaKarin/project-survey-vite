@@ -1,16 +1,29 @@
-/* Summary.css */
 .summary-container {
   flex: 1;
   border-radius: 4px;
   padding: 20px;
   margin-top: 20px;
-  max-width: 100%; /* Limit the width to 100% of the parent container */
-  overflow-wrap: break-word; /* Wrap long words to the next line */
+  max-width: 1000px;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-wrap: break-word;
 }
 
-.summary-container h2 {
-  color: #093171; /* Blue heading color */
-  margin-bottom: 15px;
+.name-header {
+  display: flex;
+  flex-direction: row; /* Set flex-direction to row by default */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.name-header h2 {
+  color: #093171;
+  font-size: 22px;
+}
+
+.name-header p {
+  margin-left: 8px;
+  font-style: italic;
+  font-size: 22px;
 }
 
 /* Summary List */
@@ -26,8 +39,10 @@ ul li {
   border-radius: 4px;
 }
 
-ul li strong {
-  color: #497dd1; /* Blue color for question labels in summary */
-  font-weight: 600;
-  margin-right: 5px;
+/* Add a media query for screens with a width less than 420px */
+@media screen and (max-width: 420px) {
+  .name-header {
+    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    align-items: flex-start;
+  }
 }

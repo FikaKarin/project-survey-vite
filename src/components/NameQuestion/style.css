@@ -1,0 +1,18 @@
+h3 {
+  color: black;
+}
+
+.name-input {
+  flex: 1;
+  margin-top: 5px;
+  height: auto;
+  min-height: 30px;
+  vertical-align: top;
+  overflow-y: auto;
+  width: 100%; /* Optional: Set the input field width as needed */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,6 +1,7 @@
 /* SurveyForm.css */
 .form-container {
   flex:1;
+  margin-top: 10%;
   padding: 16px;
   max-width: 30%;
   min-width: 220px;
@@ -33,4 +34,19 @@ button:hover {
   background-color: #3a77d8; /* Slightly darker blue on hover */
 }
 
+.form.slide-up {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.form.slide-up-enter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.form.slide-up-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
