@@ -69,8 +69,8 @@ export default function Question({
           <input
             className='range-field'
             type='range'
-            min={0} // Change min value to 0
-            max={9}
+            min={1} // Change min value to 0
+            max={10}
             step={1}
             onChange={(e) => onSelect(parseInt(e.target.value))}
           />
