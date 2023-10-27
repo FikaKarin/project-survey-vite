@@ -35,22 +35,21 @@
 
 .range-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  
   align-items: center;
 }
 
 .range-field {
-  width: 100%;
-  margin-top: 10px;
+  width: calc(100% - 50px); /* Adjust width to ensure the pointer aligns perfectly */
 }
 
 .range-labels {
-  width: 100%;
+  width: 90.5%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   font-weight: 600;
+  margin-left: 5px;
 }
 
 select {

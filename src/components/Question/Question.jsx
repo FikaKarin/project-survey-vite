@@ -15,8 +15,9 @@ export default function Question({
 
   // Handle input change
   const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-    onSelect(e.target.value);
+    const value = e.target.value;
+    setInputValue(value);
+    onSelect(value);
   };
 
   // Reset input value whenever the question or followUpQuestion changes
@@ -68,8 +69,8 @@ export default function Question({
           <input
             className='range-field'
             type='range'
-            min={1}
-            max={10}
+            min={0} // Change min value to 0
+            max={9}
             step={1}
             onChange={(e) => onSelect(parseInt(e.target.value))}
           />
@@ -90,7 +91,7 @@ export default function Question({
     }
     return null;
   };
-  
+
   return (
     <div className='question-container'>
       <label className='question-label'>{question}</label>
