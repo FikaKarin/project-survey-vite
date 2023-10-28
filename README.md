@@ -6,9 +6,10 @@
 
 # Survey Project
 
-Replace this readme with your own information about your project.
+BY KARIN LUNDQVIST - A survey for programmers.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+<img width="640" alt="Skärmavbild 2023-10-28 kl  18 39 17" src="https://github.com/FikaKarin/project-survey-vite/assets/91525357/b3068ab6-e7e2-4fc3-8115-c125ae6b3a57">
+
 
 ## Getting Started with the Project
 
